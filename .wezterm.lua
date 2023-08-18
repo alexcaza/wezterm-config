@@ -26,7 +26,17 @@ config.keys = {
         key = 'W',
         mods = "CMD",
         action = wezterm.action.CloseCurrentTab {confirm = true}
-    }
+    },
+    {
+        key = 'd',
+        mods = "CMD",
+        action = wezterm.action.SplitHorizontal
+    },
+    {
+        key = 'D',
+        mods = "CMD",
+        action = wezterm.action.SplitVertical 
+    },
 }
 
 -- and finally, return the configuration to wezterm
