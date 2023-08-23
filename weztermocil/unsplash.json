@@ -1,0 +1,12 @@
+{
+    "name": "unsplash-web",
+    "cwd": "/Users/alexcaza/Documents/programming/unsplash-web",
+    "commands": [
+       "nix develop -c just localization-watch-postpone",
+       "NODE_ENV=development nix develop -c just server-start-debug",
+       "NODE_ENV=development nix develop -c just server-build",
+       "NODE_ENV=development nix develop -c just client-dev-server",
+       "NODE_ENV=development nix develop -c just typecheck-watch-all"
+    ]
+
+}
