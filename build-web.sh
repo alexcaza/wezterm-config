@@ -26,8 +26,6 @@ fifth_pane=$(wezterm cli split-pane --bottom --pane-id "$main_pane" --top-level 
 # Rename tab
 run_command "$main_pane" "wezterm cli set-tab-title $(echo $TAB_NAME)"
 
-echo "TEST"
-
 # Starts commands
 run_command "$main_pane" "nix develop -c just localization-watch-postpone"
 run_command "$second_pane" "NODE_ENV=$ENV nix develop -c just server-start-debug" # HACK: Temp until watchexec bug figured out
