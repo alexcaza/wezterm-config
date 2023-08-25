@@ -38,6 +38,10 @@ config.keys = {
         action = wezterm.action.SplitVertical 
     },
 }
+config.inactive_pane_hsb = {
+    brightness = 0.6,
+    saturation = 0.8
+}
 
 -- and finally, return the configuration to wezterm
 return config
