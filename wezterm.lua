@@ -13,7 +13,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Kanagawa (Gogh)'
+config.color_scheme = 'Rosé Pine Dawn (Gogh)'
 config.font_size = 16
 config.font = wezterm.font 'CommitMono'
 config.keys = {
